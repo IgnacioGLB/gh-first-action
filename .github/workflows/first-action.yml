@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch #esto espera al usuario para que active el workflow MANUALLY
+jobs:
+  first-job:        # esta no es una tag que deba llevar si o si este nombre. name, on y jobs SI
+    runs-on: ubuntu-20.04    # este vuelve a ser una reserve key, tiene que ser asi
+    steps:   # reserved key again
+      - name: Print greeting
+        run: echo "Hello che!"
+      - name: Pring goodbye
+        run: echo "listo, nos vemos maquina!"
